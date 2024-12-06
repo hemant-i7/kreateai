@@ -1,6 +1,7 @@
 Here's the structured and properly formatted README for your KreateAI project:
 
 ---
+![image](https://github.com/user-attachments/assets/ba4d448f-f526-422f-b016-b352fe9555ee)
 
 # KreateAI: AI-Powered Social Media Content Generator
 
