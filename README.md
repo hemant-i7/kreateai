@@ -77,17 +77,19 @@ npm start
 ```
 
 ---
+## Check Out the Code on GitHub 🚀
 
-## Contributing
+Want to dive deeper into the code and learn how KreateAI works under the hood?  
+Explore the entire project on GitHub:
 
-Want to contribute or learn more about how KreateAI works? Check out the full code and contribute on GitHub:
-
-- [KreateAI GitHub Repository](https://github.com/your-username/kreateai)
-
-Feel free to open issues, submit pull requests, or suggest new features!
+[**Repository**](https://github.com/hemant-i7/kreateai)
 
 ---
 
+## Call to Action
 
+To learn more about Google Cloud services and create impact for the work you do, get around to these steps right away:
 
-This README is now fully structured with headings, links, and a clear flow. You can easily copy it to GitHub and make any necessary modifications!
+- [Register for Code Vipassana sessions](https://rsvp.withgoogle.com/events/cv)
+- [Join the meetup group Datapreneur Social](https://www.meetup.com/datapreneur-social/)
+- [Sign up to become a Google Cloud Innovator](https://cloud.google.com/innovators?utm_source=cloud_sfdc&utm_medium=email&utm_campaign=FY23-1H-vipassana-innovators&utm_content=joininnovators&utm_term=-)
