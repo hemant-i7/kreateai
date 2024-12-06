@@ -108,27 +108,12 @@ export default function LandingPage({ session }: { session: Session | null }) {
   )
 }
 
-interface FeatureCardProps {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}
-
-
-interface FeatureCardProps {
-  icon: React.ReactNode;
-  title: string;
-  description: string;
-}
-
-function FeatureCard({ icon, title, description }: FeatureCardProps) {
+function FeatureCard({ icon, title, description }) {
   return (
     <div className="bg-white/10 backdrop-blur-lg rounded-lg p-6 hover:bg-white/20 transition-all duration-300">
       <div className="mb-4">{icon}</div>
       <h4 className="text-xl font-semibold mb-2">{title}</h4>
       <p className="text-gray-300">{description}</p>
     </div>
-  );
+  )
 }
-
-

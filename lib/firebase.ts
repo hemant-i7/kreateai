@@ -1,5 +1,6 @@
-import { initializeApp } from 'firebase/app';
-import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { initializeApp, getApps, getApp } from 'firebase/app';
+import { getAuth } from 'firebase/auth';
+import { getFirestore } from 'firebase/firestore';
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -10,19 +11,9 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
 };
 
-const app = initializeApp(firebaseConfig);
-const storage = getStorage(app);
+const app = getApps().length > 0 ? getApp() : initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const db = getFirestore(app);
 
-export async function uploadImageToFirebase(file: File) {
-  if (!file) return null;
+export { app, auth, db };
 
-  try {
-    const storageRef = ref(storage, `images/${Date.now()}_${file.name}`);
-    const snapshot = await uploadBytes(storageRef, file);
-    const downloadURL = await getDownloadURL(snapshot.ref);
-    return downloadURL;
-  } catch (error) {
-    console.error('Firebase upload error:', error);
-    return null;
-  }
-}
